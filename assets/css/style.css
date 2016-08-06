@@ -1,0 +1,117 @@
+#contact {
+  height: 40px;
+  background: black; }
+  #contact h4 {
+    color: lightgray;
+    font-size: 13px;
+    line-height: 22px;
+    float: right;
+    margin-right: 10px; }
+
+#menu {
+  height: 82px;
+  background-color: color; }
+  #menu img {
+    margin-top: 25px; }
+  #menu ul li {
+    display: inline-block;
+    color: #93a1a7;
+    margin-left: 22px;
+    line-height: 80px; }
+  #menu ul li:nth-child(1) {
+    color: #23282f; }
+  #menu ul li a {
+    color: #93a1a7;
+    text-decoration: none; }
+
+#local {
+  height: 700px; }
+  #local button {
+    background: #8d8d8d;
+    color: white;
+    width: 100px;
+    height: 35px;
+    border: 1px solid #8d8d8d;
+    border-radius: 15px; }
+  #local .photo {
+    position: relative; }
+    #local .photo img {
+      position: relative;
+      width: 100%;
+      height: 755px; }
+    #local .photo .dcs {
+      color: #464B4D;
+      font-size: 20px;
+      top: 20px;
+      z-index: 1;
+      position: absolute;
+      background: lightgray;
+      border: 1px solid lightgray;
+      border-radius: 8px;
+      opacity: 0.9;
+      margin-right: 400px;
+      margin-top: 177px;
+      left: 380px; }
+    #local .photo button {
+      margin: 8px 30px; }
+    #local .photo button:nth-child(2) {
+      float: right; }
+    #local .photo .btnGroup {
+      height: 50px;
+      background: lightgray; }
+
+#we {
+  background: lightgray;
+  height: 596px;
+  margin-top: 114px; }
+  #we .col-md-6 {
+    margin-top: 60px; }
+  #we .two {
+    margin-top: 95px; }
+  #we wd img {
+    width: 475px;
+    height: 308px; }
+  #we .lorem {
+    width: 532px; }
+  #we button {
+    margin-top: 55px;
+    width: 122px;
+    height: 42px;
+    background: #f69417;
+    border: 1px solid #f69417;
+    border-radius: 2px;
+    color: #FFFFFF;
+    font-size: 11px; }
+  #we .col-md-12 .what {
+    margin-top: 100px;
+    background: #f69417;
+    width: 70px;
+    color: #FFFFFF;
+    text-align: center; }
+  #we .col-md-12 h2 {
+    font-size: 40px; }
+
+#features {
+  margin-top: 74px;
+  height: 668px; }
+  #features p {
+    font-size: 16px; }
+  #features img {
+    display: inline-block;
+    width: 50px;
+    height: 50px; }
+  #features .row div {
+    display: inline-block; }
+  #features .ClearFix {
+    height: 69px; }
+  #features button {
+    width: 160px;
+    height: 40px;
+    background: #29c2e1;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid #29c2e1;
+    margin-top: 77px;
+    margin-bottom: 99px; }
+
+/*# sourceMappingURL=style.css.map */

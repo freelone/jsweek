@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>Document</title>
+</head>
+<body>
+	<section id="contact">
+		<div class="container">
+			<div class="row center">
+				<div class="col-md-12">
+					<h4>Call Us: 9855 445 4444</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="menu">
+		<div class="container">
+			<div class="row center">
+				<div class="col-md-4">
+					<img src="logo.png">
+				</div>
+				<div class="col-md-8 text right">
+					<ul>
+						<li>HOME</li>
+						<li><a href="">ABOUT US</a></li>
+						<li><a href="">NEWS</a></li>
+						<li><a href="">PORTFOLIO</a></li>
+						<li><a href="">SERVICE</a></li>
+						<li><a href="">BLOG</a></li>
+						<li><a href="">PAGES</a></li>
+						<li><a href="">CONTACT US</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	<section id="local">
+		<div class="container">
+			<div class="row center">
+				<div class="photo">
+						<img src="img/et.jpg">
+						<div class="dcs">
+					</div>
+					<div class="btnGroup">	
+						<button onclick="prev()">Prev</button>
+						<button onclick="next()">Next</button>
+					</div>
+				</div>
+	
+	<script>
+			imageArr=["img/et.jpg","img/rome.jpg","img/desk.jpg"];
+			dcsArr=["Apple Union Square Highlights New Design Elements, Community Programs Cupertino, CA and Richmond, VA — July 5, 2016 — Apple ® and iPhone®",
+			"Apple Announces New iOS App Design and Development Accelerator in Bengaluru users will be able to sign up to be an organ, eye and tissue donor right from the Health app with the release of iOS 10",
+			"Apple Previews iOS 10, the Biggest iOS Release Ever Through a simple sign up process, iPhone users can learn more and take action with just a few taps"];
+	
+			imgSource=document.getElementsByTagName('img')[1];
+			dcsSource=document.getElementsByClassName('dcs')[0];
+			dcsSource.innerHTML=dcsArr[0];
+			imgSource.src=imageArr[0];
+	
+			count=0;
+	
+	function prev() {
+		
+		count--;
+			if(count<0){
+			count=imageArr.length-1;
+			}
+		console.log(count);
+		imgSource.src=imageArr[count];
+		dcsSource.innerHTML=dcsArr[count];
+		console.log(count)
+	}
+	function next(){
+		count++;
+			if(count==imageArr.length){
+			count=0;
+			}
+		imgSource.src=imageArr[count];
+		dcsSource.innerHTML=dcsArr[count];
+		console.log(count)
+	}
+	</script>
+			</div>
+		</div>	
+	</section>
+	<section id="we">
+		<div class="container">
+			<div class="row center">
+			<div class="col-md-12 text-center">
+				<center><p class="what">WHAT</p></center>
+				<b><H2>WE ARE?</H2></b>
+			</div>
+				<div class="col-md-6">
+					<div class="wd"><img src="img/wd.jpg">
+					</div>
+				</div>
+				<div class="col-md-6 two">
+					<p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia debitis unde, corrupti ullam! Tenetur distinctio ipsam non, quidem quam impedit minima tempora rerum suscipit in nihil ab maxime, enim nisi.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corporis, similique tempore possimus? Itaque, quisquam harum nihil quasi autem voluptas suscipit nobis blanditiis deserunt quos quidem, corporis quia reiciendis deleniti.</p>
+					<button onclick="">READ MORE</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="features">
+		<div class="container">
+			<div class="row center">
+						<h1>FEATURES</h1>
+					<p>SOME OF OUR PICTURES</p>
+				<div class="row">
+					<div class="col-md-1">
+						<img src="img/client.png">
+					</div>
+					<div class="col-md-3">
+						<p>Data Entry</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class="col-md-1">
+						<img src="img/client.png">
+					</div>
+					<div class="col-md-3">
+						<p>Client menegment</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class="col-md-1">
+						<img src="img/com.png">
+					</div>
+					<div class="col-md-3">
+						<p>Better Comminication</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				 </div>
+						<div class="ClearFix"></div>
+				
+				<div class="row center">
+							<div class="col-md-1"><img src="img/team.png"></div>
+							<div class="col-md-3">
+								<p>Well analyzing</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+							<div class="col-md-1">
+								<img src="img/support.png">
+							</div>
+							<div class="col-md-3">
+								<p>24 hour support</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+							<div class="col-md-1"><img src="img/business.jpg">
+							</div>
+							<div class="col-md-3">
+								<h3>Keeping business data</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+					  <div class="col-md-2 col-md-offset-5"><button>MORE FEATURES</button></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+</body>
+</html>
